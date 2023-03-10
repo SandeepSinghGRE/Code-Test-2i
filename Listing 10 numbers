@@ -1,0 +1,16 @@
+# This reads a list of 10 numbers that the user has input
+num_list = []
+for i in range(10):   # for loop to read the numbers inserted by user to be added into the list
+    num = int(input("Please enter a number between 1 and 100: "))
+    num_list.append(num)
+
+# Here it will remove duplicates with the use of a set
+duplicate_nums = set(num_list)
+
+# This will sort the numbers using a parameter in descending order
+sorted_nums = sorted(duplicate_nums, reverse=True)
+
+# The numbers that have been sorted will be printed
+print("Sorted unique numbers in descending order:")
+for num in sorted_nums:
+    print(num)
